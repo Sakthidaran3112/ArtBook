@@ -14,6 +14,17 @@ ArtBook is an Android application designed for art enthusiasts and collectors to
 
 - **Personalization:** Customize the ArtBook app to match your preferences with various themes and settings.
 
+## Technologies Used
+1. Kotlin
+2. Dagger Hilt for dependency injection
+3. Kotlin Coroutines for asynchronous programming
+4. Room Database for local data storage
+5. Retrofit for network communication
+6. Glide for image loading and caching
+7. Android Navigation for navigation components
+8. Espresso for UI testing
+9. JUnit for unit testing
+
 ## Screenshots
 
 ![Screenshot 1](path/to/screenshot1.png)
@@ -24,3 +35,18 @@ ArtBook is an Android application designed for art enthusiasts and collectors to
 
 ## Getting Started
 
+To run the DevByte Viewer app on your local machine, follow these steps:
+
+1. Clone the repository.
+2. Open the project in Android Studio.
+3. Build and run the app on an emulator or physical device.
+
+## Contributing
+
+We welcome contributions to enhance and improve the DevByte Viewer app. Feel free to open issues for bug reports or submit pull requests for new features and fixes
+
+## License
+
+This project is licensed under the [Apache 2.0 License](LICENSE).
+
+Happy coding!
