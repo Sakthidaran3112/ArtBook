@@ -38,12 +38,17 @@ class ArtDetailsFragment @Inject constructor(
 
         subscribeToObservers()
 
-//        binding..setOnClickListener{
-//            binding.nameText.clearFocus()
-//            val foc = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-//
-//            foc.hideSoftInputFromWindow(binding.nameText, 0)
-//        }
+        binding.artImageBackground.setOnClickListener {
+            // Clear focus from the EditText
+            binding.nameText.clearFocus()
+
+            // Get the InputMethodManager system service using the fragment's context
+            val imm = requireContext().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+
+            // Hide the soft keyboard
+            imm.hideSoftInputFromWindow(binding.nameText.windowToken, 0)
+        }
+
 
         binding.artImageView.setOnClickListener {
             findNavController().navigate(
