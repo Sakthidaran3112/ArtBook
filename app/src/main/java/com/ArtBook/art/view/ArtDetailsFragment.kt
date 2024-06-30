@@ -1,9 +1,12 @@
 package com.ArtBook.art.view
 
+import android.content.Context
 import android.os.Bundle
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
+import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -34,6 +37,13 @@ class ArtDetailsFragment @Inject constructor(
         fragmentBinding = binding
 
         subscribeToObservers()
+
+//        binding..setOnClickListener{
+//            binding.nameText.clearFocus()
+//            val foc = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+//
+//            foc.hideSoftInputFromWindow(binding.nameText, 0)
+//        }
 
         binding.artImageView.setOnClickListener {
             findNavController().navigate(

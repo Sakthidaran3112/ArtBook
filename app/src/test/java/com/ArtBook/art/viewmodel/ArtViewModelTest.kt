@@ -92,5 +92,4 @@ class ArtViewModelTest {
         assertThat(value.status).isEqualTo(Status.ERROR)
     }
 
-
 }
